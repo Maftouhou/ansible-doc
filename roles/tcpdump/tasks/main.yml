@@ -1,0 +1,8 @@
+---
+# tasks file for tcpdump
+- name: Install tcpdump
+  yum: 
+    name: '{{item}}' 
+    state: present
+  with_items:
+    - tcpdump

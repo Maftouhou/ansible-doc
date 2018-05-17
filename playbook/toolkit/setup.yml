@@ -1,0 +1,18 @@
+---
+# ---------------------------------------
+# Install packages :
+# ---------------------------------------
+# 
+# 1- htop
+# 2- tshark
+# 3- resolvconf
+# 4- tcpdump
+# ---------------------------------------
+  - hosts: ans-app-group
+    become: true
+    roles:
+      - global-config
+      - htop
+      - tshark
+      - resolvconf
+      - tcpdump

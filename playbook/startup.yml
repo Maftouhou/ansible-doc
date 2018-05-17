@@ -1,0 +1,3 @@
+---
+# Import playbooks !
+- import_playbook: toolkit/setup.yml

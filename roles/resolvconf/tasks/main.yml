@@ -1,0 +1,15 @@
+---
+# tasks file for resolvconf
+- name: Install resolvconf
+  shell: |
+    # cd ~ && mkdir tooling && cd tooling
+    # curl https://roy.marples.name/downloads/openresolv/openresolv-3.9.0.tar.xz --output openresolv-3.9.0.tar.xz
+    # tar -xf openresolv-3.9.0.tar.xz
+
+    # cd openresolv-3.9.0
+    
+    # wget http://www.grid-appliance.org/files/packages/openresolv_patch.zip
+    # unzip openresolv_patch.zip
+    # make
+    # ./patch.sh
+    # su -c "make install"

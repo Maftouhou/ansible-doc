@@ -1,0 +1,8 @@
+---
+# tasks file for tshark
+- name: Install wireshark
+  yum: 
+    name: '{{item}}' 
+    state: present
+  with_items:
+    - wireshark

@@ -1,0 +1,18 @@
+---
+# tasks file for global-config
+- name: install Epel and webtatic repos
+  yum: 
+    name: '{{item}}' 
+    state: present
+  with_items:
+    - epel-release
+    - https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+
+# install other tools
+- name: Install utilities tools
+  yum: 
+    name: '{{item}}' 
+    state: present
+  with_items:
+    - zip
+    - unzip
